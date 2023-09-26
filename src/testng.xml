@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OCM Modules Test Automation" parallel="false">
+
+	<listeners>
+		<listener class-name="com.tetherfi.listeners.ResultsListener" />
+		<listener
+			class-name="com.tetherfi.ExtentReportListener.ExtentReportListener" />
+	</listeners>
+
+	<test name="OCMRegression">
+		<classes>
+			<class name="com.tetherfi.test.ProfanityWordsUpdateTest"/>
+		</classes>
+	
+	</test>
+
+</suite>
